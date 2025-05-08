@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d4610;
+  color: white;
+  padding: 1rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.carrusel {
+  max-width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 50%; 
+}
+
+.slide.activo {
+  display: block;
+} 
+
+.productos {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+body {
+ 
+    background-image: url(moli.jpg);   
+    background-size: cover;               
+    background-repeat: no-repeat;       
+    background-position: center center; 
+  }
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #a0cf93; /* Fondo beige claro */
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  width: 300%; /* Tres imágenes en total, cada una ocupa 100% del contenedor */
+}
+
+/* Estilos de las imágenes del carrusel */
+.carousel-images img {
+  width: 33.33%; /* Cada imagen ocupa el 33.33% del ancho total */
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* Botones de navegación */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Botón izquierdo */
+.carousel-button.prev {
+  left: 10px;
+}
+
+/* Botón derecho */
+.carousel-button.next {
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el footer */
+footer {
+  background-color: #3c682e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li { 
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.carrusel-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

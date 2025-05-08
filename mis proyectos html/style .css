@@ -1,0 +1,227 @@
+nav { 
+  display: flex;
+ align-items: center;
+ justify-content: space-between; 
+ padding-top: 20px;
+ padding-left: 5%;
+ padding-right: 5%;
+ font-weight: bold;
+}
+body {  
+       background-image:url(principal.webp);
+       background-repeat: no-repeat; 
+      background-size: cover; 
+    } 
+    .cont{ 
+      background-color:#917034;
+      height: 8vh;  
+      margin: -1%;
+      color: rgb(255, 255, 255); 
+    }
+
+    ul li {
+      display: inline-block; /* Coloca los elementos de lista en línea */
+      padding: 0px 20px; /* Espacio entre los elementos */
+   }
+
+   a {
+    color: rgb(252, 252, 252); /* Color de texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+ } 
+ .cont{
+   display: flex;
+ justify-content: center; 
+ gap: 10px;
+ padding: 10px;
+ }
+
+ .card {
+position: relative;
+width: 300px;
+height: 350px;
+ }
+
+ .l {
+ 
+justify-content: center; 
+position: relative;
+margin: 30px;
+ } 
+ 
+ /* Estilo general del footer */
+footer {
+  background-color:rgb(109, 51, 3); /* Fondo oscuro */ 
+  color: #fff; /* Texto blanco */
+  padding: 20px; /* Espaciado interno */ 
+  text-align: center; /* Centrar texto */ 
+  font-size: 14px; /* Tamaño de fuente */ 
+}
+
+/* Enlaces dentro del footer */
+footer a {
+  color: #202020; /* Color de los enlaces */
+  text-decoration: none; /* Quitar subrayado */
+  margin: 0 10px; /* Espaciado entre enlaces */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Texto de copyright */
+footer p {
+  margin: 10px 0; /* Espaciado interno */
+}
+
+/* Diseño responsivo (opcional) */
+@media (max-width: 768px) { }
+  footer {
+      font-size: 12px; /* Reducir tamaño en pantallas pequeñas */
+      padding: 15px;
+
+  }
+
+  .container{
+    width: 100%;
+    display: flex;
+    max-width: 1000x;
+    
+    }
+    
+    .card{
+    width: 80%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(12, 12, 12, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    }
+    
+    .card:hover{ 
+        box-shadow: 5px 5px 20px rgba(0,0,0,0,.4);
+        transform: translatey(-3%);
+    
+    }
+    
+    .card img{ 
+    width: 100%;
+    height: 210px;
+    }
+    
+    .card .contenido{
+     padding: 15px;
+    text-align: center;
+    }
+    .card .contenido p{
+        line-height: 1.5;
+        color: rgb(0, 0, 0);
+    }
+    
+    .card .contenido h3{
+        font-weight: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #d3b8d0;
+    border-radius: all 400ms ease;
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      background-color: #fffbe6; /* Fondo beige claro */
+      }
+      .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+        height: 100%;
+        width: 300%; 
+        }
+        .carousel-images img {
+          width: 33.33%; 
+          height: 100%;
+          object-fit: cover; 
+          } 
+          .carousel-button {
+            position: absolute; 
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            }
+            .carousel-button.prev { 
+              left: 10px;
+              } 
+              .carousel-button.next {
+                right: 10px;
+                }
+ 
+  
+                input[type="text"] {
+                  padding: 8px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                }
+                
+                button {
+                  padding: 8px 12px;
+                  background-color:rgb(226, 226, 226);
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+                
+                .card:hover{ 
+                  box-shadow: 5px 5px 20px rgba(0,0,0,0,.4)
+                  transfor translatey(-3%);
+              
+              }
+              
+              
+
+
+
+
+
+              .carrito img, .carrito i {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+              }
+            
+              .carrito {
+                position: absolute;
+                top: 20px;
+                right: 20px; 
+              }
+
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+
+              
