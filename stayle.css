@@ -69,42 +69,8 @@ body {
   background-color: #a0cf93; /* Fondo beige claro */
 }
 
-/* Contenedor de las imágenes del carrusel */
-.carousel-images {
-  display: flex;
-  transition: transform 0.5s ease;
-  height: 100%;
-  width: 300%; /* Tres imágenes en total, cada una ocupa 100% del contenedor */
-}
 
-/* Estilos de las imágenes del carrusel */
-.carousel-images img {
-  width: 33.33%; /* Cada imagen ocupa el 33.33% del ancho total */
-  height: 100%;
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
-}
-
-/* Botones de navegación */
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* Botón izquierdo */
-.carousel-button.prev {
-  left: 10px;
-}
-
-/* Botón derecho */
-.carousel-button.next {
-  right: 10px;
-}
+ 
 
 
 
@@ -144,7 +110,7 @@ footer ul li {
   display: inline;
   margin: 0 10px;
 }
-
+ 
 footer ul li a {
   color: white;
   text-decoration: none;
@@ -197,3 +163,254 @@ footer ul li a:hover {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal del carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #fffbe6; /* Fondo beige claro */
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  width: 300%; /* Tres imágenes en total, cada una ocupa 100% del contenedor */
+}
+
+/* Estilos de las imágenes del carrusel */
+.carousel-images img {
+  width: 33.33%; /* Cada imagen ocupa el 33.33% del ancho total */
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* Botones de navegación */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Botón izquierdo */
+.carousel-button.prev {
+  left: 10px;
+}
+
+/* Botón derecho */
+.carousel-button.next {
+  right: 10px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .carrito-container {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .carrito-container img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .contador {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background-color: red;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+
+
+
+
+    .boton {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      background-color: #3ab929;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    } 
+
+    .boton:hover {
+      background-color: #24811c;
+    }
+
+
+
+
+
+     .boton-imagen {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px;
+      width: 120px;
+    }
+
+    .boton-imagen img {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .boton-imagen span {
+      display: block;
+      margin-top: 8px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .boton-imagen:hover img {
+      transform: scale(1.1);
+    } 
+
+
+
+
+
+
+
+    .formulario {
+      background-color: #ffffff;
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .formulario h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .formulario label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .formulario button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background-color: #2980b9;
+    } 
+
+
+
+
+
+
+
+
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .catalogo-letras {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .letra {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 36px;
+      padding: 20px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .letra:hover {
+      transform: scale(1.2);
+      background-color: #e0f7fa;
+       }
